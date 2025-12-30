@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nobel Prize FAQs</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header-flex">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Nobel Prize" class="logo-icon">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="categories.html">Categories</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Winners</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="winners.html">All Winners</a></li>
+                            <li><a href="nominations.html">Nominations</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Media</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle active">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html" class="active">FAQs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">Help Center</span>
+            <h1 class="hero-title">
+                Frequently Asked <span class="gradient-text">Questions</span>
+            </h1>
+            <p class="hero-description">
+                Find answers to common questions about the Nobel Prize
+            </p>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="faq-container">
+                <h2 class="section-subtitle">General Questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the Nobel Prize?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The Nobel Prize is an international award administered by the Nobel Foundation in Stockholm,
+                        Sweden. It recognizes outstanding contributions in Physics, Chemistry, Physiology or Medicine,
+                        Literature, Peace, and Economic Sciences. The prizes were established by Alfred Nobel's will in
+                        1895 and first awarded in 1901.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Who was Alfred Nobel?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Alfred Nobel (1833-1896) was a Swedish chemist, engineer, inventor, and businessman. He is best
+                        known for inventing dynamite and holding 355 different patents. In his will, he dedicated his
+                        fortune to establish the Nobel Prizes to honor those who confer "the greatest benefit to
+                        humankind."
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How many Nobel Prize categories are there?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        There are six Nobel Prize categories: Physics, Chemistry, Physiology or Medicine, Literature,
+                        Peace, and Economic Sciences. The first five were established by Alfred Nobel's will in 1895.
+                        The Prize in Economic Sciences was established in 1968 by Sweden's central bank in memory of
+                        Alfred Nobel.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>When are the Nobel Prizes announced?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The Nobel Prizes are announced in early October each year, with each category announced on
+                        different days. The exact dates vary, but typically: Physiology or Medicine (first Monday),
+                        Physics (Tuesday), Chemistry (Wednesday), Literature (Thursday), Peace (Friday), and Economic
+                        Sciences (the following Monday).
+                    </div>
+                </div>
+                <h2 class="section-subtitle faq-subtitle">Nomination & Selection</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Who can nominate candidates for the Nobel Prize?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Only specific individuals can nominate candidates, including previous Nobel laureates, members
+                        of the Nobel Committees, selected university professors, members of academies, and certain
+                        officials. The specific criteria vary by category. Self-nominations are not accepted.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the Nobel Prize be awarded posthumously?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Since 1974, the Nobel Prize cannot be awarded posthumously. However, if a person is awarded the
+                        prize and dies before receiving it, the prize is still presented. A nominee who dies before the
+                        announcement can be awarded the prize if the nomination was made before February 1st of the year
+                        of their death.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long are nomination records kept secret?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Information about nominations is kept strictly confidential for 50 years. This restriction
+                        applies to nominees, nominators, and all investigations and opinions related to the award. After
+                        50 years, the information becomes publicly available in the Nobel Prize database.
+                    </div>
+                </div>
+                <h2 class="section-subtitle faq-subtitle">Prize Details</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What do Nobel laureates receive?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Each Nobel laureate receives three things: a Nobel diploma, a gold medal bearing Alfred Nobel's
+                        image, and a monetary award. The prize amount varies each year based on the Nobel Foundation's
+                        finances. In recent years, it has been approximately 11 million Swedish kronor (about $1 million
+                        USD).
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can the prize be shared?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, a Nobel Prize can be shared by up to three individuals. If there are two laureates, the
+                        prize is divided equally. If there are three, the prize can be divided equally or one laureate
+                        can receive half while the other two share the remaining half. Organizations can receive the
+                        Peace Prize without this limitation.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>When and where is the Nobel Prize ceremony held?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The Nobel Prize ceremony is held annually on December 10th, the anniversary of Alfred Nobel's
+                        death. The prizes in Physics, Chemistry, Physiology or Medicine, Literature, and Economic
+                        Sciences are awarded in Stockholm, Sweden. The Peace Prize is awarded in Oslo, Norway.
+                    </div>
+                </div>
+                <h2 class="section-subtitle faq-subtitle">Statistics & Records</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Who was the youngest Nobel laureate?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Malala Yousafzai is the youngest Nobel laureate, receiving the Peace Prize in 2014 at the age of
+                        17 for her struggle against the suppression of children and young people and for the right of
+                        all children to education.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How many women have won the Nobel Prize?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        As of 2024, 64 women have been awarded the Nobel Prize across all categories. Marie Curie was
+                        the first woman to win (Physics, 1903) and remains the only person to win Nobel Prizes in two
+                        different scientific categories (Physics 1903, Chemistry 1911).
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Has anyone declined the Nobel Prize?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, two laureates have declined the Nobel Prize: Jean-Paul Sartre declined the Literature Prize
+                        in 1964, and Le Duc Tho declined the Peace Prize in 1973. Additionally, four laureates were
+                        forced by their governments to decline: Richard Kuhn (Chemistry, 1938), Adolf Butenandt
+                        (Chemistry, 1939), Gerhard Domagk (Medicine, 1939), and Boris Pasternak (Literature, 1958).
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How many times has the Nobel Prize not been awarded?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        The Nobel Prize has not been awarded 49 times, mostly during World War I (1914-1918) and World
+                        War II (1939-1945). If no suitable candidate is found or if the situation in the world makes it
+                        inappropriate to award the prize, it can be reserved until the following year or not awarded at
+                        all.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="section section-dark faq-contact-section">
+        <div class="container faq-contact-container">
+            <div class="faq-contact-icon"></div>
+            <h2 class="section-title faq-contact-title">Still Have Questions?</h2>
+            <p class="faq-contact-description">
+                If you couldn't find the answer you're looking for, feel free to contact us directly.
+            </p>
+            <p class="faq-contact-email">
+                Email: <a href="mailto:postmaster@nobelpeaceprize.org"
+                    class="faq-contact-link">postmaster@nobelpeaceprize.org</a>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h2>THE NOBEL PEACE PRIZE</h2>
+                    </div>
+                    <div class="footer-sections">
+                        <div class="footer-section">
+                            <h3>Contact us</h3>
+                            <div class="footer-divider"></div>
+                            <div class="footer-info">
+                                <p><strong>Address:</strong></p>
+                                <p>Henrik Ibsens gate 51</p>
+                                <p>0255 Oslo</p>
+                                <p class="footer-info-spacing"><strong>Phone:</strong></p>
+                                <p>+47 22 12 93 00</p>
+                                <p class="footer-info-spacing"><strong>Email:</strong></p>
+                                <p>postmaster@nobelpeaceprize.org</p>
+                            </div>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Office hours</h3>
+                            <div class="footer-divider"></div>
+                            <div class="footer-info">
+                                <p>Monday - Friday: 09.00 - 15.00</p>
+                                <p>(15 September - 14 May)</p>
+                                <p class="footer-info-spacing-sm">Monday - Friday: 09.00 - 14.30</p>
+                                <p>(15 May - 14 September)</p>
+                                <p class="footer-info-spacing-sm">Saturdays and Sundays: Closed</p>
+                            </div>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Social media</h3>
+                            <div class="footer-divider"></div>
+                            <div class="social-media">
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11" fill="#666" />
+                                        <path
+                                            d="M13.5 12h2.5l-1-3h-2v-2c0-1 .5-1.5 1.5-1.5h1V4h-2c-2 0-3 1-3 3v2H9v3h2v6h2.5v-6z"
+                                            fill="#fff" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="11" fill="#666" />
+                                        <rect x="8" y="8" width="8" height="8" rx="2" stroke="#fff" stroke-width="1.5"
+                                            fill="none" />
+                                        <circle cx="12" cy="12" r="2" fill="#fff" />
+                                        <circle cx="15" cy="9" r="0.5" fill="#fff" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <div class="footer-bottom-left">
+                    <span class="privacy-icon"></span>
+                    <a href="#" class="privacy-link">Privacy policy and cookies</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>Developed by: CoreTrek | Content Management System: CorePublish</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.faq-icon');
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.faq-icon').forEach(item => {
+                if (item !== icon) {
+                    item.classList.remove('active');
+                }
+            });
+            // Toggle current FAQ
+            answer.classList.toggle('active');
+            icon.classList.toggle('active');
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
